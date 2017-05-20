@@ -1,11 +1,7 @@
-<!-- <div class="row">
-  <div class="col-sm-6 col-md-4"> -->
-    <div class="thumbnail" ng-repeat="info in goingToTheSunInfo">
-      <img src="{{info.photo}}">
-      <div class="caption">
-        <h3>{{info.name}}</h3>
-        <p>{{info.description}}</p>
-      </div>
-    </div>
-<!--   </div>
-</div> -->
+<div class="thumbnail" ng-repeat="info in goingToTheSunName">
+  <img src="{{info.photo}}">
+  <div class="caption">
+    <h3>{{info.name}}</h3>
+    <p ng-repeat="description in goingToTheSunDescription">{{description.description}}</p>
+  </div>
+</div>
